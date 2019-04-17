@@ -35,7 +35,7 @@ function useT (this: ITranslator) {
         ]
         events.forEach(name => this.on(name, forceUpdate))
         return () => events.forEach(name => this.off(name, forceUpdate))
-    })
+    }, [])
     return this
 }
 
