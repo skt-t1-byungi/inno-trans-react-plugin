@@ -75,7 +75,7 @@ function nodeToReactNode (node: TagNode, values: ValueMap): ReactNode {
 
     const children = nodesToReactNodes(node.children, values)
     if (typeof val === 'function') {
-        return val(children)
+        return val(children.length > 2 ? createElement(Fragment, undefined, ...children) : children)
     } else if (isValidElement(val)) {
         return cloneElement(val, undefined, ...children)
     } else {

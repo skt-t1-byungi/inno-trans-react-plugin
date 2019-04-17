@@ -60,6 +60,16 @@ dom('function value with nested #3',
     <>a <span>b{null}</span></>
 )
 
+dom('function value with nested #4',
+    rt('a <0>b<1>c</1></0>', { 0: (children: any) => <span>{children}</span>, 1: (children: any) => <p>{children}</p> }),
+    <>a <span>b<p>c</p></span></>
+)
+
+dom('function value with nested #5',
+    rt('a <0>b<1>c</1>d</0>', { 0: (children: any) => <span>{children}</span>, 1: (children: any) => <p>{children}</p> }),
+    <>a <span><>b<p>c</p>d</></span></>
+)
+
 test('A missing message returns a key.', t => {
     t.is(trans.rt('no message <0/>', { 0: <br/> }), 'no message <0/>')
 
