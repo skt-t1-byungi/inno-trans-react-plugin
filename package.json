@@ -1,13 +1,25 @@
 {
     "name": "inno-trans-react-plugin",
+    "description": "A inno-trans plugin for react.",
     "version": "0.0.0",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "license": "MIT",
     "repository": "https://github.com/skt-t1-byungi/inno-trans-react-plugin.git",
     "author": "skt-t1-byungi <tiniwz@gmail.com>",
+    "keywords": [
+        "inno-trans",
+        "react",
+        "hook",
+        "i18n",
+        "localization",
+        "interpolation"
+    ],
     "scripts": {
-        "test": "ava"
+        "test": "ava",
+        "clean": "rm -rf lib",
+        "build": "npm run clean && tsc",
+        "prepublishOnly": "npm run test && npm run build"
     },
     "devDependencies": {
         "@types/node": "^11.13.4",
