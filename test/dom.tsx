@@ -47,22 +47,22 @@ dom('function value',
 
 dom('function value with nested #1',
     rt('a <0>b<1>c</1></0>', { 0: (children: any) => <span>{children}</span>, 1: <div/> }),
-    <>a <span>b<div>c</div></span></>
+    <>a <span><>b<div>c</div></></span></>
 )
 
 dom('function value with nested #2',
     rt('a <0>b<1>c</1></0>', { 0: (children: any) => <span>{children}</span>, 1: {} }),
-    <>a <span>b<>c</></span></>
+    <>a <span><>b<>c</></></span></>
 )
 
 dom('function value with nested #3',
     rt('a <0>b<1 /></0>', { 0: (children: any) => <span>{children}</span> }),
-    <>a <span>b{null}</span></>
+    <>a <span><>b{null}</></span></>
 )
 
 dom('function value with nested #4',
     rt('a <0>b<1>c</1></0>', { 0: (children: any) => <span>{children}</span>, 1: (children: any) => <p>{children}</p> }),
-    <>a <span>b<p>c</p></span></>
+    <>a <span><>b<p>c</p></></span></>
 )
 
 dom('function value with nested #5',
