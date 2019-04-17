@@ -1,0 +1,43 @@
+{
+    "name": "inno-trans-react-plugin",
+    "version": "0.0.0",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "license": "MIT",
+    "repository": "https://github.com/skt-t1-byungi/inno-trans-react-plugin.git",
+    "author": "skt-t1-byungi <tiniwz@gmail.com>",
+    "scripts": {
+        "test": "ava"
+    },
+    "devDependencies": {
+        "@types/node": "^11.13.4",
+        "@types/react": "^16.8.13",
+        "ava": "^1.4.1",
+        "browser-env": "^3.2.6",
+        "inno-trans": "^2.2.0-beta2",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-hooks-testing-library": "^0.4.1",
+        "ts-node": "^8.1.0",
+        "tslint": "^5.16.0",
+        "tslint-config-byungi": "^0.1.1",
+        "typescript": "^3.4.3"
+    },
+    "peerDependencies": {
+        "inno-trans": "^2.2.0-beta2",
+        "react": "^16.8.6"
+    },
+    "dependencies": {
+        "tag-name-parser": "^1.0.1",
+        "use-force-update": "^1.0.4"
+    },
+    "ava": {
+        "compileEnhancements": false,
+        "extensions": [
+            "tsx"
+        ],
+        "require": [
+            "ts-node/register"
+        ]
+    }
+}
