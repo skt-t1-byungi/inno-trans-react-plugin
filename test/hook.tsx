@@ -1,9 +1,10 @@
 import test from 'ava'
 import { renderHook, act } from 'react-hooks-testing-library'
 import InnoTrans = require('inno-trans')
+import InnoTransReactPlugin = require('../src/index')
 
 import './_browser'
-import './_helpers'
+InnoTrans.use(InnoTransReactPlugin)
 
 test('change locale', t => {
     const trans = InnoTrans({

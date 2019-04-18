@@ -40,7 +40,6 @@
         "react": "^16.8.6"
     },
     "dependencies": {
-        "tag-name-parser": "^1.0.1",
         "use-force-update": "^1.0.4"
     },
     "ava": {
