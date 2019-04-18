@@ -1,7 +1,7 @@
 {
     "name": "inno-trans-react-plugin",
     "description": "A inno-trans plugin for react.",
-    "version": "0.0.1-beta2",
+    "version": "0.0.1-beta3",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "license": "MIT",
