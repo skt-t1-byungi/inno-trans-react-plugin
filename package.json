@@ -15,6 +15,7 @@
         "localization",
         "interpolation"
     ],
+    "files": ["lib"],
     "scripts": {
         "test": "ava",
         "clean": "rm -rf lib",
