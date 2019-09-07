@@ -53,7 +53,7 @@ test.only('child are not rerendered more than once,', t => {
         wrapper: ({ children }) => {
             trans.useT()
             calls++
-            return <div>{children}</div>
+            return <>{children}</>
         }
     })
 
