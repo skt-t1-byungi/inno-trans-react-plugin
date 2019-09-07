@@ -1,7 +1,7 @@
 {
     "name": "inno-trans-react-plugin",
     "description": "A inno-trans plugin for react.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "license": "MIT",
@@ -15,7 +15,9 @@
         "localization",
         "interpolation"
     ],
-    "files": ["lib"],
+    "files": [
+        "lib"
+    ],
     "scripts": {
         "test": "ava",
         "clean": "rm -rf lib",
